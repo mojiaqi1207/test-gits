@@ -128,7 +128,6 @@ from
             split_activity_amount,
             split_coupon_amount
         from gmall.ods_order_detail
-        
         where dt={date}
     ) od
         left  join
