@@ -130,7 +130,7 @@ from
         from gmall.ods_order_detail
         where dt={date}
     ) od
-        left join
+        left  join
     (
         select
             id,
