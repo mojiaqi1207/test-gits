@@ -82,6 +82,7 @@ def sync_schema(mysql_conf, spark):
         mysql_conn = get_mysql_connection(mysql_conf)
         tables = get_mysql_tables(mysql_conn, mysql_conf['database'])
         print(f"开始同步 {len(tables)} 张表结构")
+
         for table in tables:
             try:
                 columns = get_table_columns(mysql_conn, mysql_conf['database'], table)
